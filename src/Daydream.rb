@@ -19,4 +19,3 @@ until text.empty?
 end
 
 puts result
-
