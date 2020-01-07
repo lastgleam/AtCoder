@@ -1,4 +1,4 @@
-# Daydream
+# C - Daydream
 # https://atcoder.jp/contests/abc049/tasks/arc065_a
 #
 words = %w[dream dreamer erase eraser]

@@ -1,4 +1,4 @@
-# Coins
+# B - Coins
 # https://atcoder.jp/contests/abc087/tasks/abc087_b
 #
 A = gets.strip.to_i + 1

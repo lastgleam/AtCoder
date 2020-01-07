@@ -1,5 +1,5 @@
 # Shift Only
-# https://atcoder.jp/contests/abc081/tasks/abc081_b
+# https:/atcoder/.jp/contests/abc081/tasks/abc081_b
 #
 number = gets.strip.to_i
 array = gets.strip.split(" ").map(&:to_i)

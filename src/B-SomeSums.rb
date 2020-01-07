@@ -1,4 +1,4 @@
-# Some Sums
+# B - Some Sums
 # https://atcoder.jp/contests/abc083/tasks/abc083_b
 #
 N, A, B = gets.strip.split(" ").map(&:to_i)
