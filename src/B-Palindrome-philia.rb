@@ -1,16 +1,9 @@
-# B - Card Game for TWo
-# https://atcoder.jp/contests/abc088/tasks/abc088_b
+# B - Palindrome-philia
+# https://atcoder.jp/contests/abc147/tasks/abc147_b
 #
-N = gets.strip.to_i
-cards = gets.strip.split(" ").map(&:to_i)
-MAX = N - 1
-(0..MAX).each do |i|
-  (i..MAX).each do |j|
-    cards[i], cards[j] = cards[j], cards[i] if cards[i] < cards[j]
-  end
+s = gets.strip.split('')
+count = 0
+(s.size / 2).times do |i|
+  count += 1 if s[i] != s[s.size - 1 - i]
 end
-result = 0
-cards.each_with_index do |num, i|
-  i.even? ? result += num : result-= num
-end
-puts result
+puts count
