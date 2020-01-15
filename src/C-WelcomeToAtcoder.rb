@@ -1,5 +1,5 @@
 # C - Welcome to Atcoder
-# https://atcoder.jp/contests/abc149/tasks/abc151_c
+# https://atcoder.jp/contests/abc151/tasks/abc151_c
 #
 N, M = gets.strip.split(" ").map(&:to_i)
 correct_cnt = 0

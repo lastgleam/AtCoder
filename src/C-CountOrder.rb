@@ -1,5 +1,5 @@
 # B - Count Order
-# https://atcoder.jp/contests/abc149/tasks/abc150_c
+# https://atcoder.jp/contests/abc150/tasks/abc150_c
 #
 N = gets.strip.to_i
 P = gets.strip.split(' ').map(&:to_i)

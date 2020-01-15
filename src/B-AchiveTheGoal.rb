@@ -1,5 +1,5 @@
 # B - Achieve the Goal
-# https://atcoder.jp/contests/abc149/tasks/abc151_b
+# https://atcoder.jp/contests/abc151/tasks/abc151_b
 #
 N, K, M = gets.strip.split(" ").map(&:to_i)
 A = gets.strip.split(" ").map(&:to_i)
