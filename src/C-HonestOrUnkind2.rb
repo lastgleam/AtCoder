@@ -1,26 +1,32 @@
-# C - Traveling
-# https://atcoder.jp/contests/abc086/tasks/arc089_a
+# C - House Of Kind 2
+# https://atcoder.jp/contests/abc147/tasks/abc147_c
 #
-step = [0]
-x = [0]
-y = [0]
-res = 'Yes'
-
 N = gets.strip.to_i
+evidences = []
 N.times do
-  tmp = gets.strip.split(' ').map(&:to_i)
-  step.push tmp[0]
-  x.push tmp[1]
-  y.push tmp[2]
-end
-
-1.upto(N) do |n|
-  dis = (x[n] - x[n-1]).abs + (y[n] - y[n-1]).abs
-  cnt = (step[n] - step[n-1]).abs
-  if dis > cnt || (dis % 2) != (cnt % 2)
-    res = 'No'
-    break
+  e = gets.strip.to_i
+  one = []
+  e.times do
+    one.push(gets.strip.split(' ').map(&:to_i))
   end
+  evidences.push one
 end
+count = 0
 
-puts res
+[0,1].repeated_permutation(N).each do |kase|
+  next unless kase.any?{ |n| n == 1 }
+  p kase
+  correct = true
+  evidences.each do |e|
+    e.each do |person, answer|
+      p "#{person}, #{answer}"
+      if kase[person] == 1 && kase[person - 1] != answer
+        correct = false
+        break
+      end
+    end
+  end
+  p 'correct!' if correct
+  count += 1 if correct
+end
+puts count
